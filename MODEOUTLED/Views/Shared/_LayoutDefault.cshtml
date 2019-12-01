@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="@ViewBag.des" />
+    <meta name="keywords" content="@ViewBag.key" />
+    <!-- END: basic page needs -->
+    <!-- BEGIN: css -->
+    <link href="~/Content/style.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/Styles/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/compact.css" type="text/css" media="screen" />
+    <link href="~/Content/osviews.css" rel="stylesheet" />
+    <link href="~/Content/top-member.css" rel="stylesheet" />
+    <link href="~/Content/news.css" rel="stylesheet" />
+    <link href="~/Content/PagedListHome.css" rel="stylesheet" />
+    <!-- BEGIN: js -->    
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.min.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('body').append('<div id="backtotop"></div>');
+            $(window).scroll(function () {
+                var $toa_do = $(window).scrollTop();
+                if ($toa_do == 0) { $('#backtotop').fadeOut(); }
+                else { $('#backtotop').fadeIn() };
+            });
+            $('#backtotop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 500);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="box-top-head"><div id="logo"></div></div>
+<div id="menu"></div>
+<div class="container-main">
+    <div class="container">
+            @RenderBody()
+    </div>
+        <div class="container-right">
+        <div id="Adtop"></div>
+        <div id="NewR"></div>
+        <div id="AdBot"></div>
+    </div>
+    </div>
+    <div class="container-footer"><div id="foo"></div></div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@*@using os;*@
+@using onsoft.Models;
+@model PagedList.IPagedList<onsoft.Models.Product>
+@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<div class="detail">
+<div class="titlelink">
+    <ul>
+        <li><a href='/'><i class="icon-home" style="font-size: 14px;"></i>Nghĩa Đồng</a></li>
+        <li class='SecondLast'><a href='/san-pham'>Sản phẩm</a></li>
+        @Html.Raw(ViewBag.link)
+    </ul>
+</div>
+<div class="container">
+<ul class="da-thumbs">
+    @for (int i = 0; i < Model.Count; i++)
+     {
+        if(i%4 != 0)
+        {
+             <li>
+               <div class="imagespro"><a href="/thien-an-vu/@Model[i].Tag" title="@Model[i].Name"><img src="@Model[i].Image" alt="@Model[i].Name" /></a></div>
+               @* @if ((Model[i].PricePromotion / Model[i].PriceRetail) * 100 < 100)
+                {
+                    *@
+                 <div>
+                    <p class="sp_code"><a href="/thien-an-vu/@Model[i].Tag">@Model[i].Name</a></p>
+                    @if(@Model[i].Code != null && @Model[i].Code != "")
+                    {
+                        <p class="gia_cu">@Model[i].Code</p>
+                    }
+                    else
+                    {
+                        <p class="gia_cu">No size</p>    
+                    }
+                        @if (Model[i].PricePromotion == 0)
+                        {
+                            <p class="gia_sp">Giá: Vui lòng liên hệ</p>
+                        }
+                        else
+                        {
+                            @*<p class="gia_sp">Giá: @os.Format_Price(Model[i].PricePromotion.ToString()) đ</p>*@
+                        }
+                    </div>
+                   @* <div class="giamgia">
+                    <span class="discount-label">Giảm</span>
+                    <span class="discount-value">@StringClass.Round(double.Parse((100 - (Model[i].PricePromotion / Model[i].PriceRetail) * 100).ToString()), 2) %</span>
+                    </div>*@@*
+                }
+                else
+                {
+                    <div>
+                    <p class="sp_code"><a href="/thien-an-vu/@Model[i].Tag">@Model[i].Name</a></p>
+                     @if (Model[i].PricePromotion == 0)
+                        {
+                            <p class="gia_sp">Giá: Vui lòng liên hệ</p>
+                        }
+                        else
+                        {
+                            <p class="gia_sp">Giá: @os.Format_Price(Model[i].PricePromotion.ToString()) đ</p>
+                        }
+                    </div>
+                }*@
+                </li>
+    }
+        else
+        {
+            <li class="right">
+               <div class="imagespro"><a href="/thien-an-vu/@Model[i].Tag" title="@Model[i].Name"><img src="@Model[i].Image" alt="@Model[i].Name" /></a></div>
+                 <div>
+                    <p class="sp_code"><a href="/thien-an-vu/@Model[i].Tag">@Model[i].Name</a></p>
+                    @if(@Model[i].Code != null && @Model[i].Code != "")
+                    {
+                        <p class="gia_cu">@Model[i].Code</p>
+                    }
+                    else
+                    {
+                        <p class="gia_cu">No size</p>    
+                    }
+                        @if (Model[i].PricePromotion == 0)
+                        {
+                            <p class="gia_sp">Giá: Vui lòng liên hệ</p>
+                        }
+                        else
+                        {
+                            @*<p class="gia_sp">Giá: @os.Format_Price(Model[i].PricePromotion.ToString()) đ</p>*@
+                        }
+                    </div>
+                </li>
+        }
+            }
+</ul>
+    @Html.PagedListPager(Model, page => Url.Action("Albums", "Default", new { page = page }), (PagedListRenderOptions)ViewBag.ship)
+</div>
+</div>

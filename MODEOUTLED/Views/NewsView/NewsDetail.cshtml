@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<div class="head-list">
+    <ul>
+        <li><a href='/'><i class="icon-home" style="font-size: 14px;"></i>Nghĩa Đồng</a></li>
+        <li  class='SecondLast'><a href='/tin-tuc'>Tin tức</a></li>
+        @Html.Raw(ViewBag.link)
+    </ul>
+</div>
+     @Html.Raw(ViewBag.newsdetail)
+<div class="single_share">
+			<div class="single_share_left left_share">
+				<div class="title_face">Theo dõi nghiadong.gov.vn qua FB, G+:</div>
+				@Html.Raw(ViewBag.fbg)
+			</div>
+			<div class="single_share_right right_share">
+				<div class="title_face">Thích và chia sẻ bài này trên:</div>
+				<div class="farightcol" style="float: left;">
+                    @Html.Raw(ViewBag.fbitem)
+				</div>
+			</div>
+		</div>
+<div class="title_topviewall">BẠN CÓ THỂ QUAN TÂM</div>
+    <div class="news-list-bottom">
+    <ul>
+        @Html.Raw(ViewBag.othertop)
+    </ul>
+</div>
+<div class="news-home-bottom">
+    <ul>
+        @Html.Raw(ViewBag.otherbot)
+    </ul>
+</div>
+</div>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1&appId=429741320382398";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

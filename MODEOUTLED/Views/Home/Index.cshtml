@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<div class="news-home-top">
+<div class="news-home-left">
+    @Html.Raw(ViewBag.top1)
+</div>
+<div class="news-home-right">
+    <ul>
+        @Html.Raw(ViewBag.top4)
+    </ul>
+</div>
+</div>
+@Html.Raw(ViewBag.chuoig)

@@ -1,0 +1,32 @@
+﻿<script type="text/javascript">
+    jQuery(document).ready(function () {       
+        jQuery('#btnHotro').hover(function () {
+            jQuery(this).animate({ right: "-60px" }, 500);
+            jQuery('#ctSp').delay(500).animate({ right: "0" }, 500);
+        });
+
+        jQuery('#bgThugon').hover(function () {
+            jQuery('#ctSp').animate({ right: "-210px" }, 500);
+            jQuery('#btnHotro').delay(500).animate({ right: "0px" }, 500);
+        });
+    });
+</script>
+
+<div class="spOnl">
+    <!-- <p id="SpText"><a href="#">Hỗ trợ trực tuyến</a></p> -->
+    <div id="SpButton">
+        <a id="btnHotro"></a>
+        <div id="ctSp">
+            <p id="bgThugon"><a id="btnThugon">Thu gọn</a></p>
+            <div id="wrapSp">
+                <img src="~/Content/images/hotrotructuyen.jpg" />
+                @*<p><a href="#" class="iYahoo"></a><a href="#" class="iSpyke"></a>Tư vấn khách hàng 1</p>
+                <p><a href="#" class="iYahooOf"></a><a href="#" class="iSpykeOf"></a>Tư vấn khách hàng 2</p>
+                <p><a href="#" class="cel"></a>04.85 89 42 86</p>
+                <p><a href="#" class="mob"></a>0977.004.734</p>
+                <p><a href="#" class="hl"></a><span>HOTLINE:<br/> 0989 85 82 85</span></p>*@
+                @Html.Raw(ViewBag.View)
+            </div>
+        </div>
+    </div>
+</div>

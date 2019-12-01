@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<div class="head-list">
+    <ul>
+        <li><a href='/'><i class="icon-home" style="font-size: 14px;"></i>Nghĩa Đồng</a></li>
+        <li  class='SecondLast'><a href='/tin-tuc'>Tin tức</a></li>
+    </ul>
+</div>
+@Html.Raw(ViewBag.chuoig)
+@*    @Html.PagedListPager(Model, page => Url.Action("ListNews", "NewsView", new { page = page }), (PagedListRenderOptions)ViewBag.ship)*@

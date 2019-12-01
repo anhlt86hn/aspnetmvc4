@@ -1,0 +1,32 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@using os;
+@using onsoft.Models;
+@model PagedList.IPagedList<onsoft.Models.News>
+@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<div class="head-list">
+    <ul>
+        <li><a href='/'><i class="icon-home" style="font-size: 14px;"></i>Nghĩa Đồng</a></li>
+        <li class='SecondLast'><a href='/tin-tuc'>Tin tức</a></li>
+        @Html.Raw(ViewBag.link)
+    </ul>
+</div>
+<div class="news-home-mid">
+    @Html.Raw(ViewBag.chuoi)
+</div>
+<div class="news-list-bottom">
+    <ul>
+        @Html.Raw(ViewBag.chuoi1)
+    </ul>
+</div>
+<div class="news-home-bottom">
+    <ul>
+        @Html.Raw(ViewBag.chuoi2)
+    </ul>
+</div>
+@Html.PagedListPager(Model, page => Url.Action("ListNews", "NewsView", new { page = page }), (PagedListRenderOptions)ViewBag.ship)

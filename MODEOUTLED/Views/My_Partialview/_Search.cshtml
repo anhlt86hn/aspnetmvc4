@@ -1,0 +1,50 @@
+﻿<!--Sử dụng cho autocomplete-->
+<link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+
+
+<!--Sử dụng cho autocomplete-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('*[data-autocomplete-url]')
+    .each(function () {
+        $(this).autocomplete({
+            source: $(this).data("autocomplete-url")
+        });
+    });
+    });
+</script>
+
+<!--Reset ô tìm kiếm-->
+<script type="text/javascript">
+    $(function () {
+        $('#ProName').focus(function () {
+            $(this).val('');
+        });
+    });
+</script>
+
+<div class="box-search">
+    <!--BEGIN: search-->
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @id = "search" }))
+    {
+        <p>
+            @Html.TextBox("ProName", ViewBag.CurrentProName as string, new { data_autocomplete_url = Url.Action("Autocomplete"), @Value = "Nhập tên sản phẩm", @Style = "color:#999999;", @id = "ProName" })
+        </p>
+        <p>
+            <input type="submit" name="submit" value="TÌM KIẾM" class="search-bt" />
+        </p>
+    }
+    <!--END search-->
+</div>
+@if (Session["Email"] == null)
+{
+    <div class="logintop">
+        <a href="/Pages/dangnhap"><span>Đăng nhập</span></a><p>|</p>
+        <a href="/Pages/dangki"><span>Đăng ký</span></a>
+    </div>
+}
+else
+{
+    Html.RenderAction("information", "VCustomer");
+}
+<div class="box-cart">@{Html.RenderAction("CartIcon", "Cart");}</div>

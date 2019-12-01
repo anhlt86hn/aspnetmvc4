@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b25b41d8f5ae457fb0a9613086f28203" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.AccBank" Width="1.5" PointX="18" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Advertise" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_Applications" Width="1.5" PointX="8.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_Membership" Width="1.5" PointX="14" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_Paths" Width="1.5" PointX="11" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="13.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="13.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_Profile" Width="1.5" PointX="18.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_Roles" Width="1.5" PointX="11" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_SchemaVersions" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_Users" Width="1.5" PointX="16.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.aspnet_WebEvent_Events" Width="1.5" PointX="5.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Bank" Width="1.5" PointX="15.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Bill_Customer" Width="1.5" PointX="16" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Category" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.CatPermission" Width="1.5" PointX="7.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Color" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Config" Width="1.5" PointX="16.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Contact" Width="1.5" PointX="7.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Country" Width="1.5" PointX="1.5" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Customer" Width="1.5" PointX="13.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Export" Width="1.5" PointX="0.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.ExportDetail" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.GroupMember" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.GroupNew" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.GroupProduct" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.GroupSupport" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Import" Width="1.5" PointX="3.75" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.ImportDetail" Width="1.5" PointX="6" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Member" Width="1.5" PointX="1.5" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.MemberWareHouse" Width="1.5" PointX="3.75" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Menu" Width="1.5" PointX="18.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.News" Width="1.5" PointX="5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Ord" Width="1.5" PointX="16" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.OrderDetail" Width="1.5" PointX="18.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.PermissionModule" Width="1.5" PointX="9.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.PriceCity" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.ProColor" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Product" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.ProImage" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.ProPrice" Width="1.5" PointX="3" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.ProSize" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Province" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Province_Price" Width="1.5" PointX="5.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Recipient" Width="1.5" PointX="16" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.SearchPrice" Width="1.5" PointX="20.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Shop" Width="1.5" PointX="20.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Size" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Supplier" Width="1.5" PointX="1.5" PointY="36.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.Support" Width="1.5" PointX="20.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.User" Width="1.5" PointX="18.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.UserModule" Width="1.5" PointX="20.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.WareHouse" Width="1.5" PointX="1.5" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_GroupNewsInNews" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_Member_GroupMember" Width="1.5" PointX="22.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_ModuleUser" Width="1.5" PointX="7.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_News_GroupNews" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_OrderDetail_Product" Width="1.5" PointX="9.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_Permission_GroupProduct" Width="1.5" PointX="22.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_Product_NameGroup" Width="1.5" PointX="22.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_Support_NameGroup" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_Top5Order" Width="1.5" PointX="24.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.v_UserModule" Width="1.5" PointX="24.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_Applications" Width="1.5" PointX="24.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_MembershipUsers" Width="1.5" PointX="24.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_Profiles" Width="1.5" PointX="5.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_Roles" Width="1.5" PointX="11.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_Users" Width="1.5" PointX="18.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_UsersInRoles" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_WebPartState_Paths" Width="1.5" PointX="26.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_WebPartState_Shared" Width="1.5" PointX="26.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tuan_nanyspa_vn_dbModel.vw_aspnet_WebPartState_User" Width="1.5" PointX="26.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.PRK_ACCBANK_BANK" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Me__Appli__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Pa__Appli__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Ro__Appli__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Us__Appli__0DAF0CB0" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Me__UserI__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Pe__PathI__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Pe__PathI__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Pe__UserI__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FK__aspnet_Pr__UserI__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_NGUOINHAN_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.PRK_LOAIHANG_GROUPPRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_PROCOLOR_MAUSACH" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_NCC" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_DONDATHANG_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.PRK_Recipient_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_CTPHIEUXUAT_PHIEUXUAT" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_PHIEUXUAT_KHOHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_PHIEUXUAT_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_CTPHIEUXUAT_KICHCO" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_CTPHIEUXUAT_SANPHAM" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_TINTUC_NHOMTIN" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_CTPHIEUNHAP_PHIEUNHAP" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_PHIEUNHAP_KHOHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_PHIEUNHAP_NHACC" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_PHIEUNHAP_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_CTPHIEUNHAP_KICHCO" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_CTPHIEUNHAP_SANPHAM" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.PRK_MemberWareHouse_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.PRK_MemberWareHouse_WareHouse" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_SANPHAM_MAUSACH" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_SANPHAM_BANGGIA" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_SANPHAM_DSANH" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_SANPHAM_KICHCO" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.FRK_DSACH_KICHCO" ManuallyRouted="false" />
+        <AssociationConnector Association="tuan_nanyspa_vn_dbModel.aspnet_UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
